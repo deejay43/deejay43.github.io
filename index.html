@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Site do Djalma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Carrinhos</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Carrinhos</span> de Bebe</h1>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhYYGRgaHBocGBgcGRwYHxwcGhoaHBgcGhwhIS4lHB4rHx4dJjgoKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQsJCs0MTQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAPsAyAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcDBAYCAQj/xABCEAACAQIEAwQHBQcDAgcAAAABAhEAAwQSITEFQVEGImFxBxMygZGhsRRCYsHwI1JygpKi0bLC4RVEM1Njg5PS8f/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACIRAQEBAQACAgMBAAMAAAAAAAABAhEhMQNREkFhBBMiMv/aAAwDAQACEQMRAD8AualKUClKUClRON7Q4WyStzEWlYbqXBYeajUVHP284eP+4Hut3D9FoOnpXJH0icP/APOb/wCO5/8AWstnt7w9tPtAH8SOvzKxQdRSovDcfwtz2MTZY9BcWfhM1JKwIkGR1oPVKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFcP6UONvh8OqW2KtdLAsNCEUDMAeRJZRPSa7iuF9KvDTcwq3VEm08t/A8K392X3TQRfBPRhaa0j4m7cLsoYqhVVWROWSpLEddKmrfoz4eN0dvO44/0kVI9huKjE4O2095B6t/4kAE+9crfzVl7UceXC2w0BnaQinbTdm/CNPiPMTJbeQt40U9HnDh/wBvPndun/fWnjuxXClEsip/79wfAFz9K4rG8Yv3yTcuM0/dmFHko0qPxF0iFX2228Bzb3fUiuif57ztrO7bnaHg/DVlMNcxD3eSgrkXxdmSQPKSawcKwr2YZLrofwMV+J1mvWGw4QQPMnck8yTzraT9a10Y/wA2Z7UvyWprCcexKnS+7eDZXn4r9KlT26ZfbRSeikz9Yrib+K+4vvatdgKpvGPUic3X27W96Rn+5YUeLOT8gBXiz6Rbk96yhHQMyn5zXE5KHy1rC/HF/wAqt7gXauxiSFEpc/caNf4W2b5HwroKoO1eysCJUiCDsQRsQeRq6uz+ON/DWrhMll1P4lJVvmDWWs8WlSdKUqqSlKUClKUClKUClKUClKUCsGJw63EZGEqylWHUMINZ6UFVdn8R/wBIxb4fEP3LoQoyyyrLuis5MZdAZgGJEmBXzt5iS+LdZ0tqigeahz/q+VS3pW4P6ywt9R3rZyt4o5gT5NH9RqqsLxJmf9oxZoVZbcqqhVk9QoC6/u1t8Fk35V3PCfw1rOwWYk7xPKSY5wAT7q1sE2Ys/Uwv8K6fWT8K+LiCqM4Oyty3BUgj4Gslhciqv7oj4RXdnt1/GF9NtW/WtYsVfPsLufaPTSnrIBM6ATWlaDuwVZLuQB4knQVPy75nkM57WZ0CjxP1rFlMmZ8pqRtIuGEvle9+43eS2GGjEzDMQduU9a5XiXaMIxW2suNCzAgCOg3Ncl1GvKnGcKCTCqNydAPMmozF9pLC6CXP4dviY+VchisW90y7lj0Ow8hsK1QazvyX9LTLqG7UljpbAHUsT9BXXdiPSGcOxt3U/ZMVY5STkJEkgHwiR4fGsbVokgc2IFS/DMK924EtrmZ2yWx1J7q+6N/DWs7q32nj9T2rqsAymVYAqRsQRII91Za1OGYT1Nm3amfVoiT1yqFn5Vt1VJSlKBSlKBSlKBSlKBSlKBSlKDWx2FW7be24lXVlPkRHxr868ZwRs3mRllg4DR/GVf8AuDN/MtfpKqH7VXfXXrt3SRdcbfdLBPytMT4NVse0X0irZ7hGsEgDyJAqVmotLmZR/En+sVIprXpYc+njF3cqwY1OvkK07d0rDyQd1jcQZEdDtWPimJCnXULoB+82/wAOZqB/6ncJJKg8ok6Vh8mu6XzPCSxOKYuJOh1Hmdyep8aheNWYuA8nX+4af4+NLuIuOQYAjaBr86x4/EuwAYDQzI0IrDUvGksaB69a+2Uk+VZCsj3z/mlgcuc7c6zv9WbeBSWJ6DfoW5+QEmrw9GPZD1CjF3li4yxZQjVEI1Zhydh8BpuTUJ6LOxKuq42+oKzNlCNypgOw/dBEgczryE3HUWhSlKgKUpQKUpQKUpQKUpQKUpQKUpQY7twKCx2UEnyAk1+f7TB3ZX9m5Ib+aQ2vLQk/yirs7V3smDvt+Bh/V3fzqig3eBjntV8TsqtaOLxTKWJRVdXhwvdUsrwSq8pIkAaa1tfbSq525GMs97VSVOXfJpq20kDnXrjS5btt+VyCT+JBkfTkNEIHiai+0GJyqEXdt9eX6+s1tm2Z7KrZLecaqYs3DmPM6AchOn/7WdUHSs3CrKhQIExBMbg7/OvTWiDFXz68q6YilamMw5YGKkFU16a3U2dRK5/DpI135+Qqf4Pwdb92ygcIzsqMxMd1mAb3gTHUwKir1nKxHJtR+Yrb4fdIYHnO9Y2eONJ76/T+Fw620W2gCqihVUclUQB8K2K57sjx5cTYQl1N0CHWRmkaTl3giD766GsKuUpSgUpSgUpSgUpSgUpSgUpSgUpSg5f0hX8uCuDm7Io/qDH5Kapltx5irU9KV2LFperk/wBKkf7qqudR5j61rj0rWxxEhrLAEZ0YOgM94xlcabnKQQBzWuZw2HGJY5nIfdTupGnLqJEjxHSu37M8X9RcdGClLi5HLbopYZnB8FzGOeUdBXK9osIMBiWsrIyXCSd5WO5I5Eo/Lr4Cot5r+HPD2MLcsmXUwOa94fDetm+CyhlE/mOu9dLhHR0QnvaRPWDB+f1r6+AtNyg8yPrXd/wdnc1j+f25JUczoBX1LLc2Hz/z9amsVwF5lHBHQj3aH/iobi/Br6LmGZgNSo18zAqmsazO8M2X9tfH2BlDbkfPrWlZMGt/AqGQMdW2I0EEbjSo+8mRyOW4/wAVjr1K0z9JYYggK4PsnXyOk+7Q12PDO1OItxlvMR+6/fHl3tR7iK4fB23bQI7A6HKpP0Fewl+0+R7bqDOXMjLmA2yyNdOnSmbn1U6l/S3cB2/YiLtkH8SNH9p/zU5he1+Hfcsn8S6fFSapnAXncwrW/Jr1pOXR3HOtvE41LQy3bqoxUkDLcYwdJWEgjxmpufhv8Vl0vfC4lLihkZXU/eUhh8RWeqV4d6R7WFwow+Ht3LjjOWuPFtZdmadCSAAQNxtWpjeJ47Fn1lyziLSqqhSmIaxbO8SzuEmOck9Z0rlar1pVK8BGS4puYy6igg5LeKuXWO0gnJkI/mO3jVzWrmYAjnQZKUpQKUpQKUpQKUpQVn6VcTNyzb/dVm/rbL/t+dV41Xh2j7M2sZlLsysoIVljY6wQQZH+ar7jvYTEWAzoReQakgZXAG8rz90+6tM6nOK2OGxGKdHlEzbTOxHTetvtPca9cwt/LnfLbRlYxne3GVZjvMyEEn8cbrAFa+3VD2HtiSyw6CCTKakbaAqWk+C1Gp+0x84VjPVM+HfuMphVJBMESpnmcsAjcEbbgTSYqefu+tcnx3B/s7d9Uy5pM5SoYzmzCRJDAv17ttetesPchAwYxuOekab10fF8+pOfSmsS+XXJioP68/rXjG8VW3bZ25bHmOsfIeZFc7ax7jfWsHEr/rlVIMFlDcoEieZ10Fa6/wBF/G89qT4/LQtcVu37jZjAbQKNIPLWJraxNpFERmPMnX4DlXu1w3NcVUWXYqqAtlBYkBQxOgG2prFxFipNsAB1dlecrZShIYA6g68wa4bq1tyR1nC/SDdtWWtEuHCxauBy4BA7udbmaR5EeArnuM9o7mJcXMRbs3HUZQxQqcusDusARqeXOoQ5s0FyJ6R9K9WMOrOEzEltJiIinKl7+1ID/wCBZ/pc/wC+u77KcXS+iYfFJbNlXRLS+qtFUZ1uNIzox1KgE/i3rl7HAFzxnkASxA22gb6k/KtrGYgsz2LK527gJH7ioEZfPSSfH4Jk6ujCcIwqAZAifwvk+IQqD8Krv0gdn3bEi5hrb3VcKWFtS+Vx3SDlnLIg67ktUTwzsG2MsW8RhmV2Vyt+w7ZIymRkYDRShXfUEkg8q7z0X4U4d8ThrvdvIbcoDK5FBAZTEn2gZPJl2k1FGnw3gOLvIE+yWcMpgliIfQg7yW90e+rKwdgpbVCcxVQCdpI3NbNKgKUpQKUpQKUpQKUpQKUrFeuqilnYKo1JJgD30HH8a9HWGxFwOr3LIJl0tkBWneAQcp8tPCpAdksLasOliwisV0aJdiNQrOZYgkQROxNanE+32HtEhVa4eohR89flUVb9KdrND2GC9VdXP9JC/Wp5Z7HGcR4cWwbsHBFom3kKkS1lFdHGpHfwiKk/+nGubu87iuFvYtWixDJdTPacGQVOjKejKdCORPvqc7VY5ftH2jDszWnIYr3lGZCHTOu0am35T1rXt2GvYbEYZGLHCTiMMpK96xcyl5OXNIV1c6gSNuk5vKIRW091fcIAxUMSFJGYgSQCwkgcyBJitMlvZKsp5ggrA571sM+SIEsdFX9bCtLqK8ZcSXDu4hrYZgpiCQCYZhykaxPOo5mGcGQqtMDkJ1InlqPhW1bDW1YsczNuOUDSAOXOsuGtK6OIGYMHHiNFK/QjzY1T8bEtb7MzzlAYeBn4Viaw6OCwIbl4dIrbwgFtiyCAdCs6VkxGJZzJAHkPrWnJxHb0vcScpkUBCd2kyRzjoSecmtrAvatZXtv3lgvm7pcNo6jrG4A5gVopbmsyWDzpxKwfR/xNbGMa2XHq8QIVpEB1llEzAJBYeMrFdR2vX7PicNjV07/qbsc1cHJI+InqU6VUFtQo2n3VLXeMXriC3cuu6LEIzEr3SCpjwIEdIrPWenV+g19qF7KY4XsLafmFCnzUAD4iD76mqokpSlApSlApSlApSlB8qpe2naZrzlUb9kpIUD75GhY9fDw867jttxT1GGYAw9zuJ119o+5Z16kVSmMbM0chv4+HlWmJ+0X6QnF8US+WTAAkdSdZNRjsK2cVxJCxItKxn22JMxpOXpWNeLONEyJ/CoH1movEpbgl51BWGjcSDEH2hJ+MeJqVOKe09vEWTlKI1twAGm2+fMQraMQGOh07q8hXLfbbhIYuxI210+G1T3D8cHWdmG46Hw8DUzlnENTDo7lAELsxC2gqkuYzZVkdQZPLuzymvF601m7+0V0crql621oqeYXVpX8RifCrM7AcIfv4nDPZNxYQ2bttoVd+5cVpXN1yn2YjTXub+MLLlxWCciNcqpiUPkB3z/RVJ/1q1vfNUBedXAO3UeB5jqBvpWskIxBJVjouuhOgI85+tWT2jwXBShdGuI8nu2UdjmH71thC7RuvnVX4q9sGVsobusRBgGBmWdNPxGOpq912eVeJf1OcjJALKrRO06MPIMCPdWa3w2Pa18qicQZVGDMCjZe7BOVxmUDke8r/ANVbqYR2trcN6czMuSVLplywXEaBpMEEg5TzEVOdT0ixuOqJuRWq2KH3QW/XyrGMKgMmWPiZ+VZ1RugUVZDwiu3RfLWts8NdVLsrQIktpGbYwd58q9YfEerYOrEMJiI0kEH5E0xONd/aLHc6mYneBsPdQWN6J8eTbeyx2hlHhsT4zp/SasaqO7BcVFnE21ZoBaB0i5CNPjmZCPAPV41jr2uUpSoClKUClKxXrqqMzMFA3JIA+JoMlR/F+K28Omdzr91ebHoP81B8Z7aWbQIt/tG67KPzP61queI8We+5d2JJ+Q6AchWmcfatv0z9p+LtiLqljspIHJZOw9wFcTxrE5UMbvoPfufh9ancU0u3hp8BH5VzPFbOdtTsPrr/AIq+vqEQBr6DWxcwbDUajwrXrCyxZuWTIrPh7xtuG+I6jmK1cMa2L40B8KtB3vAO0j4LPdtqryh7rEhTEMGMamBPxNQnHO3ONxUh7zKh+5b/AGaeRjvMP4ia1OBXc6BT4qfLYfIge6ohRS+fKIK5GxI8iRXr17xBZvia+V8CyY61CUxfxzX0FtgmZVcBlRUZmJF1S+WAxzBlGmxpw65mUOSTmJViSWIYCQCT1GgPMhulaFi6VaRv7Y81Ob6T8a98OIS89j7twjIejTmst5mcvgHJqfVE0pPIAV8KTvX1D+vrXqtVGMCKGvZr6q0GnfYKVYtlAdZbpPdk+Ug+6v0L2a4l9ow9u6dGKw46Ovdcf1A+4ivzvxML6tpMaEjnqNQPeQB76770K9oGZrmGYyCqsh8VGU+ZygD+QVlr2tFw0pSqpKUpQfKr/wBKV8r9mA5+t+Xq/wDNWBVdeli0xGHYAwPWgnlLerIHmQp+Bq2faL6V694mvuHaWHnWvNe8OefQE/lWqr7cf2jrrJgan3Vz2JJzv+FiCJ/dJBj4VOs0Cd4gx1ggx765vG4d0ZnElSxJ5kSZ351XXUxntNz5V7uYNLg6HqP1rWKy4aGGx3HjyNbNpudWzywqHuYdrbQ3x61lvmF8ifpUxicKLqRsw2P6/WvlUNjVKrDaHT5SNKz1niZet7sqc11Un2inxzR/u+Vdpx70VYmwC9hlvoOQBVwP4dc3uM+FRnAuHLbxOAt5RnN1M5HMBkDAnn3mkeVfoqq9S/Jt7DuhKupUjQg8vPpXleZ8P+Pzr9RcV4PYxKFL1tXB6jUeKsNQfI1VfGPRJf8AWN9muWzbIlfWMysNfZOVCDy108qmWCsrcghoJyxoBOleOI2CQGGpWUPjl2/tK/Crh4P6JioHr74B5rbWf72j/TUTjeD4bAcVS1eAfC3LatmuwQCAyksQANGVSdNjS2DkcLi/WqLk6nS5t7X7/k0En8QbYROzUbxbDeovs6W7lvD3S7YfOuUlM8ER0BGx1EKd4r5Ywl24P2IdzoAilmAnqo1A/t8thOdcRY3b+LS3qzAfrkNzUXd42zaW0/mbb4D/ADWq/CLodhdAVwSCHZUOYcoJknbQDSRMCpBuGrbUF3UtyUK2URvqQGY/wqR40uqcaaYW7e9ppE6sRlUe+NfIAnwqx+wF3A4FkLljcYki42kAqysQizCAwskkksYAho4jA8VRHRsnrgDqHkJA5ZBuJ6nblzE9icRb4hxNM4GGt3VS1CsgKsEyg7b5soUkCQoHKBRK/LF5XUMjBlYAqwMgg7EHnWaqu9G/FLmHxFzh195dXdQOQZQHDL0V1zNHIrsJ1tGgUpSgVo8W4emItNacd1hvzU8mHiDrW9Sg/PXGOHPh7r2nEMp0PJhyYeBFaqGFPif8k1bvpD4B9os+uQTctAmBuybuviRuPeOdVAxgAeZ/Kts3sVr45084r61tWEGPGsF66FiZ1n6fr41gu8RAUkLBB59NjHl+VWlk9osrQxGH9S+nsNpPQ1sg6ePOsz4oOMjqsHzj48qh2JR8smFOx5jl51Xsnmek+b7S9l451uLaW5lLAFgQwkTqDIn9edR+cGG+7z8DWe2/wrTPKrex0XBNcdhblwqiI3fdm0BBDqZ2AJVRrV727gYAggg6ggyCPA86/PVrEEAb/r61M8L4s9ogo5TqF0nzjel+Ca/80/Pntd9K4rg/bKYW8P5gNvMcx5fOumxXFrNq2Lr3VVDEMToZ2A5k+ArDfx6xfMWzqX0kKrj0x8JD4ZMRmUGyxVgd2S6VUhepBg+QaulvdscELT3RiEZUXMVBhjvACmCSTpFUbxrti+KvPcuhGlHRUZcyIrAwF10cSO8NQY1qiy3sDwfD8T4XhkurIFtAGU95LiDI5RjP3lYQZnnULgPRKtswcTnSZA9SA3vYuRPiB7q5Dsf2uu4IoisXQ6mwxABnc2zEqxIOmxM6TNXAONLdsretGVYc9wRoysOTAyD5UHIduuzWHwvDrrWE76tbl9M+U3FDagCBB1iKrjEcZsXOGYfDZHXEWrrsH0ylbjMzEmZmSojrbB8Ks3jWON5HtPOV1KnyP6mqsV2wzXbN+2rWrixmyiVZQfVup6frkZCBuOXcaKGLBQAMo70jUAQDoDPPeui4PhvX3LVp5Ul1tuw7rrnuBSTP3gYPu8518BgbF3D3Cz5biy2phSsd0RzkztrMeFe+G8IuXrTBAJlYJJXLDBpBjfux76DqOznBDhuOGyt03ctzMbjasc1suwc831IJ9/hV6VWHo84GuGYuxL3W3czpPtROpJPM/wCZs1TIoPVKUoFKUoPlUpieydy9i8RYsFB6slgGJUZS3dAhTrBFXXVLduHZOJXWW61o/syjqGjNkWQxU5gJA2B51Mtgr7jRcMpHLn485+VbfCccjD1VzRHIDDodg6Hk4kxyOx02x8Qud4gxDCR4GKx8P4UzIpfQEaDn/wAVPfPQuYfISmsAnKSMsidNDsOfyrXxlgsudfaXfxFTlk3V7hi6n7jAZv5Tz+viK38PgbN3VMyPrK8pgggg/rpNa4zNeJVbqz25HA4jkdjpW9hjrHSsvFezd62xa2udeYXUjxy7n3TWhgXgHMCDOo/KKtnOs3liLZqdiatvOvwraS5G1R9gO+w93+azGzBh7qifujuz113NafnIz/G1M4LGCSC36/KtriqG5a7hzFJKCZEfeA33+oHU1HWQgAA06VntXShkGrX5JrPNTwmZ5exC8KvJeEusbiZMqZ0Jj5iOelRnEMHlcqjgWiWIDEhMyqQNPukjSPdO1Zseq2bzgSA8kMIBUGWAGne0Ma9OdbnEEYqbLrqyqykqQZiQIIBg6HlXDZxsjcNgBeu20DFWYBbe5BusTkXXYFoB6TPnZfon4p61msuIDoWGshnRgGIH3WKMsj8APOuJ4T2V+2K4R8j2rZuKpEi4f3ZnunbWDvU56HsOxxltwdBbuF/EER/qK1AtrEcBVuVQ/FOxNq+uV18mGjDyP5HSu2pQVJb9EKB59e5XpkGb+qY/trr+Hdk7dpAirAHvJ8SeZrrKUEdhOGqnKpACvtKBSlKBSlKBVP8ApCwrDFuXWVfKyE7EBQpjxBEfDwq4KieP8Ht4q0bdzTmrD2lbqPzHOgob1KZ8zKG89Y8htNZ2uCa9ce4Vdwtwo4kT3XHsuOoPI+G4qNFyg3GE+Nes79c3TNv5Bt/jPhFaRes1ljEk6eP+aS8E7w/iWaFeQdgT15A/kefnWxjOHW7hl0Gbkw0I9/MVC4Ky98ObaM2QDMAJ0MwAPvbHQVtYLHn2GmRIEzIPNWnn+vP0Ph+ean47Ybxzzl8GDVCRrI8fgR4VMcG40llHs37CX8O5l0KqWUxuubQjTYkQdQRtUXjr2gPQx8a0jems/lzJbFsatnUZxDCKtx2wue2mZiqMQwyz3QwkifKay8PxpfuOMrrGYbiDsw8PpVhdluwQvIl++/cdQyW10lW1GY+XIV2L9lcMVy+qSNR7IGhBESNYg/nvXLNWNLOqPwjrfxCr3e8jZJEiY0U+OUN7gdwYP2zgmzojEkoxQAmdA0Ko8AIA8BXccU9FzC4Hw7grmDAMxVkI1BzD2o67/Wp7s32G9S3rLzK765QJIE7kk7mqpVXh+xWMznKdwVLi4w7h+6diQem1Wz2B7NDBoSYLsIJ5Bd8onqdSfAdK6i1w9F5VtIgG1B7pSlApSlApSlApSlApSlArFeWRFZaUHF8a4MzyCMynkRIri8d2KbUocv4TqPjuPnVylAeVY2w6nlQUHiOzmJTe058VGb6a1gfhl45UW08sQBKMBJ6mNK/QX2ROlfRhl6UFe9m+zL2ECTJmWbaSf+IHurpeIdmLOJtFbiAORC3ABnUjYhtyJ5V0K2wOVe6CornYPGZsmVGUHS7nCqRrErGYHXoalOH+jhswN66gTmltSSR0ztEeeX4VZFKvd2+0TMjHathVCqAFUAKBsABAA91ZaUqiSlKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUClKUH//Z" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Carrinhos</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Venda de carrinhos de bebe. </p> 
+    <p>Olhe as fotos e mande um e-mail solicitando o seu carrinho</p>
+ 
+    
+     <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+          <h1>Carrinho Rosa R$ 2000,00</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmc9mF4B_p10LHON3qR-I_6J5nVzvLp9nAw&usqp=CAU" style="width:100%">
+        <h1>Carrinho Azul R$2000,00</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8RUM4nBSNAqHwEQuTLC64E6_ebuES-RSQsQ&usqp=CAU" style="width:100%">
+        <h1>Carrinho Preto R$ 3500,00</h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxcZlRYh0Cl1c5dpOntFo_YuocASGXSJP8Lw&usqp=CAU" style="width:100%">
+      </div>
+
+      
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contato</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Brasília, DF</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 61 98573 - 8367</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: djalmab.junior@gmail.com</p>
+    </div><br>
+    <p>Mande a mensagem com seu endereço, telefone, forma de pagamento, modelo e quantidade.</p>
+
+    <form action="/pedidos.php" target="_blank" method="post"> 
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Telefone" required name="Telefone"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviar
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Desenvolvido por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Djalma Braga Junior</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
